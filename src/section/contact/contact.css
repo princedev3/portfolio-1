@@ -1,0 +1,28 @@
+.contact__container{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.contact__container a{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background: var(--color-primary);
+    color: white;
+    place-items: center;
+    display: grid;
+    font-size: 2rem;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-1);
+}
+.contact__container a:hover{
+    transform: translateY(-0.5rem);
+    background-color: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+@media screen and (max-width:600px) {
+    .contact__container{
+        gap: 1.5rem;
+    }
+}

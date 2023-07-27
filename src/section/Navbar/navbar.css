@@ -1,0 +1,47 @@
+nav{
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.5rem hsla(var(--color-primary), 68%, 42%, 20%);
+    transition: var(--transition);
+    
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav__logo{
+    width: 3.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.nav__menu{
+    display: flex;
+    gap: 3.5rem;
+}
+.nav__menu li a{
+    color: white;
+    text-transform: capitalize;
+}
+#theme__icon{
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ @media screen and (max-width: 1024px){
+    .nav__menu{
+        display: none;
+    }
+ }
